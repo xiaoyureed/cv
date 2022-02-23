@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -webkit-transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -moz-transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -ms-transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -o-transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+:root {
+    --white : #fff;
+
+    --grey-100  : #fcfcfc;
+    --grey-200  : #fafafa;
+    --grey-300  : #f0efef;
+    --grey-400  : #707070;
+    --grey-500  : #403a3a;
+
+    --black     : #000;
+    --black-100 : #0b0a0a;
+
+    --red-100 : #fa4362;
+    --red-200 : #e83f5b;
+
+    --green-100 : #50fa7b;/* ~ 1° */
+    --green-200 : #48E06E;
+    --green-transparent-100 : #50fa7b80;
+
+    --blue-100  : #2aa9e0;
+    --blue-200  : #5965e0;/* ~ 1° */
+    --blue-300  : #4f58c4;
+    --blue-400 : #2e384d;
+    --blue-500 : #242630;
+    --blue-600 : #22232d;
+    --blue-700 : #1f202a;
+    --blue-transparent-100 : #5965e080;
+    --blue-transparent-200 : #282a36cc;
+
+    --purple-100 : #8257e6;/* ~ 1° */
+    --purple-200 : #6f4bd8;
+    --purple-transparent-100 : #8257e680;
+
+    /* ~~~~~~~~~~~~~~~~~ Geral ~~~~~~~~~~~~~~~~~ */
+    --shadow-5p : rgb(0 0 0 / 5%);
+    --shadow-1p : rgb(0 0 0 / 1%);
+
+    /* ~~~~~~~~~~~~~~~ JSON Code ~~~~~~~~~~~~~~~ */
+    /* Colors ~ Dracula Theme */
+    --code-background : #282A36;
+    --code-foreground : #F8F8F2;
+    --code-selection  : #44475A;
+    --code-comment    : #6272A4;
+    --code-red        : #FF5555;
+    --code-orange     : #FFB86C;
+    --code-yellow     : #F1FA8C;
+    --code-green      : #50FA7B;
+    --code-purple     : #BD93F9;
+    --code-cyan       : #8BE9FD;
+    --code-pink       : #FF79C6;
+}
+[data-theme='light'] {
+    /* ~~~~~~~~~~~~~~~~~ Geral ~~~~~~~~~~~~~~~~~ */
+    --background                 : var(--grey-100);
+    --border                     : var(--shadow-5p);
+    --line                       : var(--grey-300);
+    --title                      : var(--blue-400);
+    --text                       : var(--grey-500);
+    /* Scrollbar -------------- */
+    --scrollbar-bg               : transparent;
+    --scrollbar-thumb-bg         : var(--blue-400);
+    --scrollbar-corner-bg        : transparent;
+    /* Scroll to top ---------- */
+    --scroll-to-top-bg           : var(--grey-300);
+    --scroll-to-top-bg-hover     : var(--blue-400);
+    /* Selection Mouse -------- */
+    --selection-mouse-background : var(--blue-400);
+    --selection-mouse-foreground : var(--code-cyan);
+    /* Aside ------------------ */
+    --aside-background           : var(--grey-300);
+    /* Main ------------------- */
+    --main-background            : transparent;
+    /* Profile ---------------- */
+    --profile-username           : var(--blue-400);
+    /* Timeline --------------- */
+    --timeline-line-border       : var(--grey-400);
+    --timeline-circle-bg         : var(--grey-400);
+    /* Donwload Pdf ----------- */
+    --d-pdf-background           : transparent;
+    --d-pdf-color-hover          : var(--green-100);
+    --d-pdf-border               : var(--grey-500);
+    --d-pdf-border-hover         : var(--green-100);
+    /* 404 Page --------------- */
+    --404-background             : var(--red-100);
+    --404-text                   : var(--white);
+}
+[data-theme='dark'] {
+    /* ~~~~~~~~~~~~~~~~~ Geral ~~~~~~~~~~~~~~~~~ */
+    --background                 : var(--blue-600);
+    --border                     : var(--shadow-5p);
+    --line                       : var(--code-selection);
+    --title                      : var(--blue-400);
+    --text                       : var(--code-foreground);
+    /* Scrollbar -------------- */
+    --scrollbar-bg               : transparent;
+    --scrollbar-thumb-bg         : var(--code-orange);
+    --scrollbar-corner-bg        : transparent;
+    /* Scroll to top ---------- */
+    --scroll-to-top-bg           : var(--code-background);
+    --scroll-to-top-bg-hover     : var(--code-orange);
+    /* Selection Mouse -------- */
+    --selection-mouse-background : var(--code-background);
+    --selection-mouse-foreground : var(--code-orange);
+    /* Aside ------------------ */
+    --aside-background           : var(--blue-700);
+    /* Main ------------------- */
+    --main-background            : transparent;
+    /* Profile ---------------- */
+    --profile-username           : var(--white);
+    /* Timeline --------------- */
+    --timeline-line-border       : var(--white);
+    --timeline-circle-bg         : var(--white);
+    /* Donwload Pdf ----------- */
+    --d-pdf-background           : transparent;
+    --d-pdf-color-hover          : var(--green-100);
+    --d-pdf-border               : var(--white);
+    --d-pdf-border-hover         : var(--green-100);
+    /* 404 Page --------------- */
+    --404-background             : var(--blue-700);
+    --404-text                   : var(--red-100);
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        background-color: var(--background);
+        color: var(--text);
+
+        h2 {
+            font-weight: 500;
+            line-height: 4rem;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+        }
+    }
+    body,
+    button,
+    input,
+    textarea { font: 400 1rem 'Poppins', sans-serif;                       }
+    button   { cursor: pointer;                                            }
+    ol, ul   { padding-left: 0; margin-top: 0; margin-bottom: 0;           }
+    a        { color: inherit; text-decoration: none; line-height: 1.5rem; }
+    ::selection {
+        background-color: var(--selection-mouse-background);
+        color: var(--selection-mouse-foreground);
+    }
+}
+
+
+
+@media (min-width:  750px) { html { font-size:  62.50%; } }
+@media (min-width:  850px) { html { font-size:  75.00%; } }
+@media (min-width: 1400px) { html { font-size: 112.50%; } }
+@media (min-width: 2400px) { html { font-size: 150.00%; } }
+@media (min-width: 3400px) { html { font-size: 156.25%; } }
+
+
+
+/* Scrollbar */
+/*  ::-webkit-scrollbar              { /* 1 *-/ }  */
+/*  ::-webkit-scrollbar-button       { /* 2 *-/ }  */
+/*  ::-webkit-scrollbar-track        { /* 3 *-/ }  */
+/*  ::-webkit-scrollbar-track-piece  { /* 4 *-/ }  */
+/*  ::-webkit-scrollbar-thumb        { /* 5 *-/ }  */
+/*  ::-webkit-scrollbar-corner       { /* 6 *-/ }  */
+/*  ::-webkit-resizer                { /* 7 *-/ }  */
+
+/* 1 */
+::-webkit-scrollbar {
+    width:  0.438rem;
+    background: var(--scrollbar-bg);
+
+    &:horizontal {
+        height: 0.438rem;
+        background: var(--scrollbar-bg);
+    }
+}
+/* 5 */
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+
+    border-radius: 0.313rem;
+    -webkit-border-radius: 0.313rem;
+    -moz-border-radius: 0.313rem;
+    -ms-border-radius: 0.313rem;
+    -o-border-radius: 0.313rem;
+}
+/* 6 */
+::-webkit-scrollbar-corner { background: var(--scrollbar-corner-bg); }

@@ -1,0 +1,43 @@
+.container {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    background-color: var(--scroll-to-top-bg);
+    border: none;
+    font-size: 0;
+
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    z-index: 100;
+
+    i {
+        transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+    }
+
+    .invisible { display: none; }
+
+    &:hover {
+        background-color: var(--scroll-to-top-bg-hover);
+
+        i {
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+        }
+    }
+}
+
+
+
+/* Desktop */
+@media (min-width: 750px) { .container { display: none; } }

@@ -1,0 +1,53 @@
+.downloadPdf {
+    background-color: var(--d-pdf-background);
+    border: 0.125rem solid var(--d-pdf-border);
+    font-size: 1.2rem;
+
+    padding: 1.4rem 2.5rem;
+
+    margin: 3rem 0;
+
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -webkit-transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -moz-transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -ms-transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -o-transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    border-radius: 0.313rem;
+    -webkit-border-radius: 0.313rem;
+    -moz-border-radius: 0.313rem;
+    -ms-border-radius: 0.313rem;
+    -o-border-radius: 0.313rem;
+
+    i { display: none; }
+
+    &:hover {
+        color: var(--d-pdf-color-hover);
+        border-color: var(--d-pdf-border-hover);
+    }
+    &::after { content: "Download"; }
+}
+
+
+
+/* Desktop */
+@media (min-width: 750px) {
+    .downloadPdf {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        border: none;
+
+        padding: 0;
+
+        margin: 0.625rem;
+
+        i { display: initial; }
+
+        &::after { content: ""; }
+        &:hover {
+            color: initial;
+            border-color: initial;
+        }
+    }
+}
