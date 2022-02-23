@@ -3,10 +3,6 @@
 import { DownloadPdf } from '../components/downloadPdf'
 import { ThemeChanger } from '../components/themeChanger'
 
-import profileImage from '../../public/profile.jpg'
-
-import Image from 'next/image'
-
 import styles from '../styles/components/profile.module.scss'
 
 /* ---------------------------------------------------------------------- */
@@ -20,13 +16,18 @@ export const Profile = () => {
       </div>
 
       <div className={styles.profileImage}>
-        <Image
+        {/* <Image
           src={profileImage}
           alt="xiaoyureed profile"
           layout="responsive"
           placeholder="blur"
           decoding="async"
           priority
+        /> */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src='https://avatars.githubusercontent.com/u/19821471?v=4'
+          alt="xiaoyureed profile"
         />
       </div>
 
