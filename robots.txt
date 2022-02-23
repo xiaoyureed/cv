@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /__tests__
+
+# Host
+Host: https://cv-nyctibiusvii.vercel.app
+
+# Sitemaps
+Sitemap: https://cv-nyctibiusvii.vercel.app/sitemap.xml
